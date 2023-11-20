@@ -370,7 +370,7 @@ header {
     }
 
     .header_img {
-        width: 260px;
+        width: 250px;
         grid-column: 2/11;
         height: 180px;
         margin:0  auto 1em;
@@ -424,7 +424,7 @@ header {
 .skills h2{
   font-size: clamp(1.9rem, 4.5vw, 2.5rem);
   font-weight:600;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
 }
 .skill-box p{
   font-weight: 700;
@@ -519,6 +519,9 @@ border-radius:0.80rem;
 .projects {
     display: flex;
     flex-direction: column;
+}
+.my-projects{
+    padding-top: 1em;
 }
 .my-projects h2{
     color: #fd8e8e;
@@ -618,6 +621,7 @@ border-radius:0.80rem;
 .contact{
     display: flex;
     flex-direction: column;
+    padding-top: 1em;
 }
 .contact-text{
     padding-top: 1rem;
