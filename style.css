@@ -207,7 +207,7 @@ justify-content:center;
 
 
 @media screen and (max-width: 576px) {  
-  
+   
     .nav-mobile-btn{
         width: 100%;
         z-index: 3;
@@ -370,15 +370,16 @@ header {
     }
 
     .header_img {
-        width: 70%;
+        width: 260px;
         grid-column: 2/11;
-       height: 180px;
+        height: 180px;
         margin:0  auto 1em;
        
     
     }
     .header_img img{
         height: 100%;
+        width: 100%;
     }
   
    
