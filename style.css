@@ -338,10 +338,8 @@ header {
  }
 
  @media screen and (max-width:768px) {
-    
-    header {
-        padding:2em 0;
-
+    header{
+        padding-top: 4rem;
     }
    
     .header_content {
