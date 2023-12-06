@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Eczar&family=Nunito+Sans&family=Playball&family=Poppins:ital@0;1&family=Source+Code+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Exo+2:wght@500&family=Lobster&family=Nunito+Sans&family=Playball&family=Poppins:ital@0;1&family=Roboto:ital,wght@0,400;1,300&family=Rubik&family=Source+Code+Pro&display=swap');
+
 /*Reset Styles */
 
 
@@ -39,7 +39,7 @@ header, section {
     justify-content:center;
 }
 section{
-    padding-top: 3rem;
+    padding-top: 4rem;
     padding-bottom:3rem;
     
 }
@@ -162,7 +162,7 @@ p {
  }
 /*NavStyles*/
 nav{
-position: fixed;
+  position: fixed;
   background-color:#2e304b ; 
   top: 0;
   width: 100vw;
@@ -173,8 +173,8 @@ position: fixed;
   font-weight: 700;
   z-index: 80;
   margin: 0 auto;
-display: flex;
-justify-content:center;
+  display: flex;
+  justify-content:center;
 }
 
 
@@ -202,7 +202,6 @@ justify-content:center;
 
 .nav-mobile-btn {
     display: none;
-    width: 0;
 }
 
 
@@ -228,20 +227,18 @@ justify-content:center;
         width: 1.7rem;
         height: 0.2rem;
         background-color: #fd8e8e;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
     }
 
-    .nav-mobile-btn.active .bottom-line:last-child {
-        transform: translate3d(0px, -4px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
-        transform-style: preserve-3d;
-        transition: all 0.3s ease-in-out;
+    .nav-mobile-btn.active .menu-btn-line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
     }
-    
-    .nav-mobile-btn.active .top-line:first-child {
-        transform: translate3d(0px, 4px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
-        transform-style: preserve-3d;
-        transition: all 0.3s ease-in-out;
+    .nav-mobile-btn.active .menu-btn-line:nth-child(2) {
+       opacity: 0;
+    }
+    .nav-mobile-btn.active .menu-btn-line:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
     }
  
     .nav-list {
@@ -255,6 +252,7 @@ justify-content:center;
         gap: 0.5rem;
         z-index: 2;
         padding-top: 2em;
+      
     
     }
 
@@ -262,6 +260,7 @@ justify-content:center;
     .nav-item {
         margin: 1rem 0;
         padding-left: 2em;
+        text-align: center;
      
     }
    
