@@ -169,23 +169,23 @@ nav{
   background-color:#2e304b ; 
   top: 0;
   width: 100vw;
-  padding: 0.8em;
+  padding: 1em 6em;
   font-size: clamp(1.1rem, 1.2vw, 1.3rem);
   border-bottom: solid 2px #fd8e8e ;
   color: #fd8e8e;
   font-weight: 700;
   z-index: 80;
-  margin: 0 auto;
   display: flex;
   justify-content:center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 
 .nav-list{ 
   display: flex; 
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
   height: auto;
   position: relative;
 
@@ -194,6 +194,7 @@ nav{
 .nav-item{
  width: 100%;
  transition: all 0.3s;
+ padding:0 2em;
 
 
 }
@@ -206,9 +207,20 @@ nav{
 .nav-mobile-btn {
     display: none;
 }
-
+nav h3 a{
+    font-style: italic;
+    letter-spacing: 2px;
+    border: 1px solid #fd8e8e;
+    border-radius: 5px;
+    padding: 0.2em 0.5em;
+    text-decoration: none;
+    color: #fd8e8e;
+}
 
 @media screen and (max-width: 576px) {  
+    nav{
+        padding-right: 0;
+    }
    
     .nav-mobile-btn{
         width: 100%;
@@ -224,6 +236,7 @@ nav{
         position: relative;
         right: 40px;
         cursor: pointer;
+      
     }
 
     .menu-btn-line {
@@ -270,14 +283,13 @@ nav{
     .nav-list.active {
         left: 0;
     }
+    nav h3{
+        display: none;
+    }
  
 }
 
 /*HeaderStyles*/
-
-header {
-    margin-top: 3em;
-}
 
  .header_content {
     width: 100%;
