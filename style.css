@@ -353,10 +353,11 @@ nav h3 a{
  }
 
  @media screen and (max-width:768px) {
-    header{
-        padding-top: 4rem;
-    }
    
+    header{
+        padding-top: 8rem;
+    }
+  
     .header_content {
         grid-row:4/12;
         grid-column:1/12;
