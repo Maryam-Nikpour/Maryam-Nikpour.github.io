@@ -21,7 +21,7 @@ body {
     word-spacing: -0.05em;
 }
 
-ul, ul a {
+ul, ul a, a {
     text-decoration: none;
     list-style: none;
     color: unset;
@@ -169,57 +169,59 @@ nav{
   background-color:#2e304b ; 
   top: 0;
   width: 100vw;
-  padding: 1em 6em;
+  padding:0.3em 3em;
   font-size: clamp(1.1rem, 1.2vw, 1.3rem);
   border-bottom: solid 2px #fd8e8e ;
   color: #fd8e8e;
   font-weight: 700;
   z-index: 80;
   display: flex;
-  justify-content:center;
-  display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
-
 }
-
 
 .nav-list{ 
   display: flex; 
+  justify-content: center;
   height: auto;
   position: relative;
 
 }
 
-.nav-item{
- width: 100%;
+.nav-item {
  transition: all 0.3s;
- padding:0 2em;
-
-
+ text-decoration: none;
+ padding:15px;
 }
 .nav-item:hover{
     color: #a0586f;
     scale: 1.1;
-
 }
 
 .nav-mobile-btn {
     display: none;
 }
-nav h3 a{
+
+.myCV{
     font-style: italic;
     letter-spacing: 2px;
     border: 1px solid #fd8e8e;
     border-radius: 5px;
     padding: 0.2em 0.5em;
-    text-decoration: none;
-    color: #fd8e8e;
+    transition: all 0.3s;
+}
+.myCV:hover{
+    color: #a0586f;
+    scale: 1.1;
 }
 
 @media screen and (max-width: 576px) {  
     nav{
-        padding-right: 0;
+        padding-right:0;
+
+    }
+    .myCV{
+        margin: 0.75em 0;
     }
    
     .nav-mobile-btn{
@@ -259,7 +261,7 @@ nav h3 a{
  
     .nav-list {
         position: fixed;
-        left: -100%;
+        left: -120%;
         top:0;
         flex-direction: column;
         background-color:#503c54;
